@@ -6,7 +6,9 @@
 
 `1° SEMESTRE`
 
-Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo desenvolvido.
+A comunidade LGBTQIA+ enfrenta historicamente desafios como discriminação, preconceito e estigma no mercado de trabalho. Pesquisas como a de Silva et al. (2022) comprovam essas dificuldades e plataformas como o TODES se apresentam como ferramentas para garantir um ambiente profissional mais justo e inclusivo.
+
+O TODES conecta candidates LGBTQIA+ a empresas comprometidas com a diversidade, criando oportunidades de emprego e promovendo um ambiente de trabalho acolhedor. A construção de um mercado de trabalho inclusivo exige um esforço conjunto de empresas, governos e sociedade civil, através de políticas públicas, campanhas de conscientização e valorização da diversidade.
 
 ## Integrantes
 
