@@ -1,10 +1,10 @@
-# TÍTULO DO PROJETO
+# TODES
 
-`CURSO`
+`ANALISE E DESENVOLVIMENTO DE SISTEMAS`
 
-`DISCIPLINA`
+`TRABALHO INTERDICIPLINAR APLICAÇÕES WEB`
 
-`SEMESTRE`
+`1° SEMESTRE`
 
 Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo desenvolvido.
 
