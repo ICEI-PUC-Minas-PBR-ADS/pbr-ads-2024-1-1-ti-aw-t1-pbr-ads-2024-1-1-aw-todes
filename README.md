@@ -13,7 +13,7 @@ O TODES conecta candidates LGBTQIA+ a empresas comprometidas com a diversidade, 
 ## Integrantes
 
 * Cristian Breno Andrade Marques
-* Henrique Taite Mendes
+* Henrique de Souza Evangelista
 * Miriã Kethelen da Silva
 * Renata Tadeu Neres Santos
 * Tiago Oliveira Castro
