@@ -7,9 +7,16 @@ Visão geral da interação do usuário pelas telas do sistema e protótipo inte
 
  Apresente as principais interfaces da plataforma. Discuta como ela foi elaborada de forma a atender os requisitos funcionais, não funcionais e histórias de usuário abordados nas <a href="2-Especificação do Projeto.md"> Documentação de Especificação</a>.
 
-## User Flow
+## Fluxo e Prototipo TODES
+
+**Prototipo:**
 
 https://www.figma.com/file/9ygvjxjsSPLwffSwVHNujR/Prototipo-Interativo?type=design&node-id=2-88&mode=design
+
+**Fluxograma**
+
+https://www.figma.com/file/kZzvgGMthGBKNsBUKFGG28/Untitled?type=design&node-id=0-1&mode=design
+
 
 Fluxo de usuário (User Flow) é uma técnica que permite ao desenvolvedor mapear todo fluxo de telas do site ou app. Essa técnica funciona para alinhar os caminhos e as possíveis ações que o usuário pode fazer junto com os membros de sua equipe.
 
