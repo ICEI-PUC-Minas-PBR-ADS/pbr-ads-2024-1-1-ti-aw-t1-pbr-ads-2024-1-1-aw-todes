@@ -8,7 +8,7 @@
 }
 main {
     width: 100%;
-    margin-top: 5vw;
+    height: 49.99vw;
     display: flex;
     justify-content: center;
 
@@ -16,15 +16,13 @@ main {
         width: 100%;
         display: flex;
         align-items: center;
-        border: black solid 2px;
-        border-radius: 20px;
-        box-shadow: 3px 3px #888888;
-        height: 40vw;
 
         & .inputs {
             width:35%;
             height: 100%;
             border-right: black solid 2px;
+            display: flex;
+            flex-direction: column;
             & #textlogin {
                 border: 1px solid green;
                 width: 100%;
@@ -92,11 +90,11 @@ main {
             justify-content: center;
             align-items: center;
             background-color: #771e76;
-            border-radius: 15px;
             & img{
                 width: 700px;
 
             }
         }
     }
+    
 }
