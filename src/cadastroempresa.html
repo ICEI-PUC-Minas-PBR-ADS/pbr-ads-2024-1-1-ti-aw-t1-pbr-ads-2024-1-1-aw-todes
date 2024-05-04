@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Empresa</title>
+    <link rel="stylesheet" href="assets/css/cadastroempresa.css" />
+</head>
+
+<body>
+    <main>
+        <section class="telacadastro">
+            <div class="tituloelogo">
+                <a href="home.html"><img src="assets/img/saida.png" /></a>
+                <h2>Formulário de Cadastro de Empresa</h2>
+            </div>
+            <div class="inputs">
+                <input type="text" id="razãoSocial" placeholder="Razão Social" required>
+                <input type="text" id="nomeFantasia" placeholder="Nome Fantasia" required>
+                <input type="number" id="cnpj" placeholder="CNPJ" required>
+                <div class="endereço">
+                    <input type="number" id="cep" placeholder="CEP" required>
+                    <input type="text" id="estado" placeholder="UF" required>
+                    <input type="text" id="cidade" placeholder="Cidade" required>
+                    <input type="text" id="bairro" placeholder="Bairro" required>
+                    <input type="text" id="logradouro" placeholder="Logradouro" required>
+                    <input type="number" id="logradouroNumero" placeholder="N°" required>
+
+                </div>
+                <input type="email" id="emailEmpresa" placeholder="Insira o email da empresa" required>
+                <input type="email" id="confirmEmailEmpresa" placeholder="Confirme o email" required>
+                <input type="password" id="password" placeholder="Senha" required>
+                <a class="olhoSenha" href="#"><img src="assets/img/icones de interface/olho.png" /></a>
+                <input type="password" id="confirmPassword" placeholder="Confirme a senha" required>
+                <a class="olhoSenha2" href="#"><img src="assets/img/icones de interface/olho.png" /></a>
+                
+                <button id="cadastrar">Cadastrar</button>
+            </div>
+            <span class="links">
+                <a href="login.html">Já é cadastrado? Faça seu login</a>
+                <a href="cadastrousuario.html">Quer Cadastrar como Usuário? Clique Aqui</a>
+            </span>
+        </section>
+    </main>
+    <script src="assets/script/cadastroempresa.js"></script>
+</body>
+</html>

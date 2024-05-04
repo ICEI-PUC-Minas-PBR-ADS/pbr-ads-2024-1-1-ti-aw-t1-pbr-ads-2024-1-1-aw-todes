@@ -89,6 +89,15 @@ main {
                     transition: 0.2s;
                     color: #001aff;
                 }
+                & .olhoSenha{
+                    cursor: pointer;
+                    position: absolute;
+                    top:61.5vh ;
+                    left:27vw ;
+                    & img{
+                        width: 32px;
+                    }
+                }
             }
         }
 

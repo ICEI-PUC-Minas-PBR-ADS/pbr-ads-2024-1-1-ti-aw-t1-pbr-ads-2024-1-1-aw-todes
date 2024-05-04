@@ -12,18 +12,21 @@
             <div class="tituloelogo">
                 <a href="home.html"><img src="assets/img/saida.png"/></a>
                 <h2>Formulário de Cadastro de Usuário</h2>
+                <h2 id="hiddentext">Cadastro de Usuário</h2>
             </div>
             <div class="inputs">
-                <input type="text" id="nome" placeholder="Nome Completo">
-                <input type="email" id="email" placeholder="Insira um email">
-                <input type="email" id="confirmEmail" placeholder="Confirme o email">
-                <input type="password" id="password" placeholder="Senha">
-                <input type="password" id="confirmPassword" placeholder="Confirme a senha">
-                <input type="date" id="datadenascimento">
-                <input type="text" id="genero" placeholder="Informe seu gênero">
-                <input type="number" id="telefone" placeholder="Número de Celular">
-                <input type="number" id="cpf" placeholder="CPF">
-                <select id="formação" name="Formação Acadêmica">
+                <input type="text" id="nome" placeholder="Nome Completo" required>
+                <input type="email" id="email" placeholder="Insira um email" required>
+                <input type="email" id="confirmEmail" placeholder="Confirme o email" required>
+                <input type="password" id="password" placeholder="Senha" required>
+                <a class="olhoSenha" href="#"><img src="assets/img/icones de interface/olho.png"/></a>
+                <input type="password" id="confirmPassword" placeholder="Confirme a senha" required>
+                <a class="olhoSenha2" href="#"><img src="assets/img/icones de interface/olho.png"/></a>
+                <input type="date" id="datadenascimento" required>
+                <input type="text" id="genero" placeholder="Informe seu gênero" required>
+                <input type="number" id="telefone" placeholder="Número de Celular" required> 
+                <input type="number" id="cpf" placeholder="CPF" required>
+                <select id="formação" name="Formação Acadêmica" required>
                     <option value="invalid">Selecione uma opção</option>
                     <option value="valor1">Ensino Fundamental Incompleto</option>
                     <option value="valor2">Ensino Fundamental Completo</option>
@@ -35,9 +38,12 @@
             </div>
             <span class="links">
                 <a href="login.html">Já é cadastrado? Faça seu login</a>
+                <a id="responsividade"href="login.html">Faça seu login</a>
             <a href="cadastroempresa.html">Quer Cadastrar sua Empresa? Clique Aqui</a>
+            <a id="responsividade2" href="cadastroempresa.html">Cadastre sua empresa</a>
             </span>
         </section>
     </main>
+    <script src="assets/script/cadastrousuario.js"></script>
 </body>
 </html>
