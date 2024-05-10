@@ -15,17 +15,18 @@
                 <h2 id="hiddentext">Cadastro de Usuário</h2>
             </div>
             <div class="inputs">
-                <input type="text" id="nome" placeholder="Nome Completo" required>
+                <input type="text" id="nome" placeholder="Nome Completo"  required>
+                <p id="mensagemErroNome">Insira um nome válido</p>
                 <input type="email" id="email" placeholder="Insira um email" required>
                 <input type="email" id="confirmEmail" placeholder="Confirme o email" required>
-                <input type="password" id="password" placeholder="Senha" required>
+                <input type="password" id="password" placeholder="Senha (Minimo 8 e Máximo 16 caracteres)" required>
                 <a class="olhoSenha" href="#"><img src="assets/img/icones de interface/olho.png"/></a>
                 <input type="password" id="confirmPassword" placeholder="Confirme a senha" required>
                 <a class="olhoSenha2" href="#"><img src="assets/img/icones de interface/olho.png"/></a>
                 <input type="date" id="datadenascimento" required>
                 <input type="text" id="genero" placeholder="Informe seu gênero" required>
-                <input type="number" id="telefone" placeholder="Número de Celular" required> 
-                <input type="number" id="cpf" placeholder="CPF" required>
+                <input type="text" id="telefone" placeholder="Número de Celular (99) 99999-9999" required> 
+                <input type="text" id="cpf" placeholder="CPF" required>
                 <select id="formação" name="Formação Acadêmica" required>
                     <option value="invalid">Selecione uma opção</option>
                     <option value="valor1">Ensino Fundamental Incompleto</option>
@@ -34,7 +35,7 @@
                     <option value="valor4">Ensino Médio Completo</option>
                     <option value="valor5">Ensino Superior Completo</option>
                 </select>
-                <button id="cadastrar">Cadastrar</button>       
+                <button onclick="cadastrar()" id="cadastrar">Cadastrar</button>       
             </div>
             <span class="links">
                 <a href="login.html">Já é cadastrado? Faça seu login</a>
