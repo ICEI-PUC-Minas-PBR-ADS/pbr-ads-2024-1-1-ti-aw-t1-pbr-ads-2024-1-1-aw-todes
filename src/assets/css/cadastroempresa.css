@@ -54,11 +54,13 @@ main {
                 border: solid 1px black;
                 height: 40px;
             }
+
             & #cnpj::-webkit-outer-spin-button,
             #cnpj::-webkit-inner-spin-button {
                 -webkit-appearance: none;
                 margin: 0;
             }
+
             & .olhoSenha {
                 cursor: pointer;
                 position: absolute;
@@ -80,46 +82,58 @@ main {
                     width: 24px;
                 }
             }
+
             & .endereço {
-                width: 70%;
+                width: 100%;
                 display: flex;
-                flex-wrap: wrap;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
                 gap: 10px;
+                & #formAdress {
+                    width: 70%;
+                    display: flex;
+                    flex-wrap: wrap;
+                    gap: 10px;
+                    & #cep {
+                        width: 20%;
+                    }
 
-                & #cep {
-                    width: 20%;
-                }
+                    & #cep::-webkit-outer-spin-button,
+                    #cep::-webkit-inner-spin-button {
+                        -webkit-appearance: none;
+                        margin: 0;
+                    }
 
-                & #cep::-webkit-outer-spin-button,
-                #cep::-webkit-inner-spin-button {
-                    -webkit-appearance: none;
-                    margin: 0;
-                }
+                    & #estado {
+                        width: 5%;
+                        background-color: rgba(0, 0, 0, 0.123);
+                    }
 
-                & #estado {
-                    width: 5%;
-                }
+                    & #cidade {
+                        width: 40%;
+                        background-color: rgba(0, 0, 0, 0.123);
+                    }
 
-                & #cidade {
-                    width: 40%;
-                }
+                    & #bairro {
+                        width: 32.3%;
+                        background-color: rgba(0, 0, 0, 0.123);
+                    }
 
-                & #bairro {
-                    width: 32.3%;
-                }
+                    & #logradouro {
+                        width: 85%;
+                        background-color: rgba(0, 0, 0, 0.123);
+                    }
 
-                & #logradouro {
-                    width: 85%;
-                }
+                    & #logradouroNumero {
+                        width: 14%;
+                    }
 
-                & #logradouroNumero {
-                    width: 14%;
-                }
-
-                & #logradouroNumero::-webkit-outer-spin-button,
-                #logradouroNumero::-webkit-inner-spin-button {
-                    -webkit-appearance: none;
-                    margin: 0;
+                    & #logradouroNumero::-webkit-outer-spin-button,
+                    #logradouroNumero::-webkit-inner-spin-button {
+                        -webkit-appearance: none;
+                        margin: 0;
+                    }
                 }
             }
 

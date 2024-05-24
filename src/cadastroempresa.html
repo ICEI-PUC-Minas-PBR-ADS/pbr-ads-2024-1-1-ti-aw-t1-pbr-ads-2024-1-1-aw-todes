@@ -20,13 +20,14 @@
                 <input type="text" id="nomeFantasia" placeholder="Nome Fantasia" required>
                 <input type="number" id="cnpj" placeholder="CNPJ" required>
                 <div class="endereço">
-                    <input type="number" id="cep" placeholder="CEP" required>
-                    <input type="text" id="estado" placeholder="UF" required>
-                    <input type="text" id="cidade" placeholder="Cidade" required>
-                    <input type="text" id="bairro" placeholder="Bairro" required>
-                    <input type="text" id="logradouro" placeholder="Logradouro" required>
-                    <input type="number" id="logradouroNumero" placeholder="N°" required>
-
+                    <form id="formAdress">
+                        <input type="number" id="cep" placeholder="CEP" required>
+                        <input type="text" id="estado" placeholder="UF" required disabled>
+                        <input type="text" id="cidade" placeholder="Cidade" required disabled>
+                        <input type="text" id="bairro" placeholder="Bairro" required disabled>
+                        <input type="text" id="logradouro" placeholder="Logradouro" required disabled>
+                        <input type="number" id="logradouroNumero" placeholder="N°" required>
+                    </form>
                 </div>
                 <input type="email" id="emailEmpresa" placeholder="Insira o email da empresa" required>
                 <input type="email" id="confirmEmailEmpresa" placeholder="Confirme o email" required>
@@ -34,7 +35,7 @@
                 <a class="olhoSenha" href="#"><img src="assets/img/icones de interface/olho.png" /></a>
                 <input type="password" id="confirmPassword" placeholder="Confirme a senha" required>
                 <a class="olhoSenha2" href="#"><img src="assets/img/icones de interface/olho.png" /></a>
-                
+
                 <button id="cadastrar">Cadastrar</button>
             </div>
             <span class="links">
@@ -43,6 +44,7 @@
             </span>
         </section>
     </main>
-    <script src="assets/script/cadastroempresa.js"></script>
+    <script src="assets/script/cadastroempresa.js"defer></script>
 </body>
+
 </html>
