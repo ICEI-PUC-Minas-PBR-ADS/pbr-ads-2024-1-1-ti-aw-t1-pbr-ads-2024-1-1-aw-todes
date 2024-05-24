@@ -20,12 +20,13 @@
                     <h5>Faça seu login e use a nossa plataforma</h5>
                 </span>
                 <span id="inputlogin">
-                    <input type="email" id="email" placeholder="Insira seu email" required>
-                    <input type="password" id="password" placeholder="Insira sua senha" required>
+                    <div id="msgError"></div>
+                    <div id="msgSucess"></div>
+                    <input type="email" id="emailLogin" placeholder="Insira seu email" required>
+                    <input type="password" id="passwordLogin" placeholder="Insira sua senha" required>
                     <a class="olhoSenha" href="#"><img src="assets/img/icones de interface/olho.png"/></a>
-                    <button id="validlogin">Login</button>
+                    <button onclick="entrar()" id="validlogin">Login</button>
                     <a href="cadastrousuario.html">Não possuí cadastro? Cadastre-se</a>
-                </span>
             </div>
             <div class="imagemlogin">
                 <img src="assets/img/Team work-amico.png" </div>

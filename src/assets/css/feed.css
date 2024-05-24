@@ -1,0 +1,109 @@
+main {
+    background-color: rgb(245, 245, 245);
+    border: solid 1px green;
+    margin-top: 16vh;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    & .searchPosts {
+        border: solid 1px yellow;
+        display: flex;
+        justify-content: center;
+
+        & #pesquisarInput {
+            width: 30vw;
+            height: 3vh;
+            border: solid 1px black;
+            border-radius: 10px;
+        }
+
+        & #pesquisarBtn {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            & img {
+                width: 20px;
+                background-color: inherit;
+            }
+        }
+    }
+
+    & .painelPosts {
+        border: solid 1px red;
+        width: 85%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        & .adicionarPost {
+            margin-top: 3vh;
+            border: solid 1px blue;
+            width: 80%;
+            height: 20vh;
+            display: flex;
+
+            & .imgPost {
+                height: 75%;
+                border: solid 1px green;
+                width: 10%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                & a {
+                    border: solid 1px black;
+                    border-radius: 100px;
+                    width: 60px;
+                    height: 60px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    & img {
+                        width: 40px;
+                    }
+                }
+            }
+
+            & .inputPost {
+                height: 75%;
+                border: solid 1px green;
+                width: 90%;
+            }
+        }
+
+        & .posts {
+            margin-top: 3vh;
+            width: 80%;
+            height: 20vh;
+            display: flex;
+
+            & .post1 {
+                height: 75%;
+                width: 10%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                & a {
+                    border: solid 1px black;
+                    border-radius: 100px;
+                    width: 60px;
+                    height: 60px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    & img {
+                        width: 40px;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feed Inicial</title>
+    <link rel="stylesheet" href="assets/css/feed.css"/>
+    <link rel="stylesheet" href="assets/css/global.css"/>
+</head>
+<body>
+    <header>
+        <span>
+            <img src="assets/img/saida.png" />
+        </span>
+        <nav class="navheader">
+            <a href="feed.html">Feed</a>
+            <a href="vagas.html">Vagas</a>
+            <a href="pessoas.html">Pessoas</a>
+            <div class="userDrop">
+                <button class="Userdropbtn">
+                <img src="assets/img/icones de interface/do-utilizador (2).png"/>
+                </button>
+                <div class="userDropdown-content">
+                  <a href="paginaUsuario.html">Perfil</a>
+                  <button onclick="logout()"id="btnLogout">Logout</button>
+                </div>
+              </div>
+        </nav>
+    </header>
+    <main>
+        <div class="searchPosts">
+        <input id='pesquisarInput' type="search"/>
+        <button id="pesquisarBtn"><img src="assets/img/icones de interface/procurar.png"</button>
+        </div>
+        <div class="painelPosts">
+            <div class="adicionarPost">
+                <span class="imgPost">
+                    <a href="paginaUsuario.html"><img src="assets/img/icones de interface/do-utilizador (2).png"/></a>
+                </span>
+                <span class="inputPost">
+                    <textarea id="contentPost"></textarea>
+                </span>
+            </div>
+            <div class="posts">
+                <div class="post1">
+                    <div class="autorPost"></div>
+                    <div class="conteudoDoPost"></div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="assets/script/feed.js"></script>
+</body>
+</html>

@@ -49,10 +49,23 @@ main {
             align-items: center;
             gap: 10px;
             margin-top: 1vw;
-            & #mensagemErroNome{
+            & #msgError{
+                text-align: center;
+                color: #ff0000;
+                background-color: #ffbbbb;
+                padding: 10px;
+                border-radius: 4px;
+                width: 30%;
                 display: none;
-                font-size: 14px;
-                color: red;
+            }
+            & #msgSucess{
+                text-align: center;
+                color: #00bb00;
+                background-color: #bbffbe;
+                padding: 10px;
+                border-radius: 4px;
+                width: 30%;
+                display: none;
             }
             & #nome {
                 border: solid 1px black;
