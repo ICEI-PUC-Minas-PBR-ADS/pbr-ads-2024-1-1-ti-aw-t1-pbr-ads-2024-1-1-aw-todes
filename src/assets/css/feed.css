@@ -46,6 +46,7 @@ main {
             width: 80%;
             height: 20vh;
             display: flex;
+            flex-wrap: wrap;
 
             & .imgPost {
                 height: 75%;
@@ -54,6 +55,7 @@ main {
                 display: flex;
                 justify-content: center;
                 align-items: center;
+                flex-direction: column;
 
                 & a {
                     border: solid 1px black;
@@ -74,6 +76,36 @@ main {
                 height: 75%;
                 border: solid 1px green;
                 width: 90%;
+                display: flex;
+                justify-content: center;
+                & #conteudoPost{
+                    border: solid 1px black;
+                    border-radius: 20px;
+                    width: 80%;
+                }
+            }
+            & .btnInterface{
+                border: solid 1px fuchsia;
+                width: 100%;
+                height: 25%;
+                display: flex;
+                justify-content: end;
+                align-items: center;
+                & #postar{
+                    margin-right: 7vw;
+                    width: 5vw;
+                    height: 4vh;
+                    border: solid 1px black;
+                    border-radius: 50px;
+                    cursor: pointer;
+                    background-color:#771e76;
+                    color: #ffffff;
+                }
+            }   
+            & #postar:hover{
+                transition: 0.2s;
+                background-color: #771e76da;
+
             }
         }
 
