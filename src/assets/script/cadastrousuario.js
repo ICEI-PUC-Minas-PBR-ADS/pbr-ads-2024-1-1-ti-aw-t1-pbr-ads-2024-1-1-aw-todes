@@ -194,6 +194,8 @@ function cadastrar() {
         msgSucess.innerHTML = '<strong>Cadastrando usuário...</strong>'
         msgError.setAttribute('style', 'display:none')
         msgError.innerHTML = ''
+        botaoVerSenha.style.top = '50vh'
+        botaoVerSenha2.style.top = '55.4vh'
         usuarios = leituraDadosUsuarios();
         let cadastrarUser =
         {
@@ -208,7 +210,7 @@ function cadastrar() {
             escolaridade: formacao.value,
             biografia: ""
         }
-        usuarios.push(cadastrarUser)
+        usuarios.push(cadastrarUser);
         localStorage.setItem('usuarios', JSON.stringify(usuarios));
         setTimeout(() => {
             window.location.href = 'login.html';
@@ -219,6 +221,8 @@ function cadastrar() {
         msgError.innerHTML = '<strong>Preencha os campos corretamente</strong>'
         msgSucess.setAttribute('style', 'display:none')
         msgSucess.innerHTML = ''
+        botaoVerSenha.style.top = '50vh'
+        botaoVerSenha2.style.top = '55.4vh'
     }
 }
 function criadorID() {

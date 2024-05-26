@@ -16,9 +16,11 @@
                 <h2>Formulário de Cadastro de Empresa</h2>
             </div>
             <div class="inputs">
+                <div id="msgError"></div>
+                <div id="msgSucess"></div>
                 <input type="text" id="razãoSocial" placeholder="Razão Social" required>
                 <input type="text" id="nomeFantasia" placeholder="Nome Fantasia" required>
-                <input type="number" id="cnpj" placeholder="CNPJ" required>
+                <input type="number" id="cnpj" placeholder="CNPJ (Sem caracteres especiais)" required>
                 <div class="endereço">
                     <form id="formAdress">
                         <input type="number" id="cep" placeholder="CEP" required>
@@ -36,7 +38,7 @@
                 <input type="password" id="confirmPassword" placeholder="Confirme a senha" required>
                 <a class="olhoSenha2" href="#"><img src="assets/img/icones de interface/olho.png" /></a>
 
-                <button id="cadastrar">Cadastrar</button>
+                <button onclick="cadastrar()"id="cadastrar">Cadastrar</button>
             </div>
             <span class="links">
                 <a href="login.html">Já é cadastrado? Faça seu login</a>
@@ -44,7 +46,7 @@
             </span>
         </section>
     </main>
-    <script src="assets/script/cadastroempresa.js"defer></script>
+    <script src="assets/script/cadastroempresa.js"></script>
 </body>
 
 </html>

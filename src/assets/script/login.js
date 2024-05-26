@@ -1,3 +1,37 @@
+//variaveirs
+let emailLogin = document.querySelector('#emailLogin');
+let senhaLogin = document.querySelector('#passwordLogin');
+let msgError = document.querySelector('#msgError');
+let msgSucess = document.querySelector('#msgSucess');
+let userValid = {
+    id: '',
+    nome: '',
+    email: '',
+    senha: '',
+    birthdate: '',
+    gênero: '',
+    celular: '',
+    cpf: '',
+    escolaridade: '',
+    biografia: ''
+}
+let empresaValid =        
+{
+    id:'',
+    razãoSocial:'',
+    nomeFantasia:'',
+    cnpj:'',
+    endereço:{
+                cep:'',
+                estado:'',
+                cidade:'',
+                bairro:'',
+                logradouro:'',
+                numero:'',
+            },
+    email:'',
+    senha:'',
+}
 function leituraDadosUsuarios() {
     var usuariosString = localStorage.getItem('usuarios');
     var usuariosObjeto = [];
@@ -10,6 +44,18 @@ function leituraDadosUsuarios() {
     }
     return usuariosObjeto;
 }
+function leituraDadosEmpresas() {
+    var empresasString = localStorage.getItem('empresas');
+    var empresasObjeto = [];
+    if (empresasString === null) {
+        empresasObjeto = [];
+        localStorage.setItem("empresas", JSON.stringify(empresasObjeto));
+    }
+    else {
+        empresasObjeto = JSON.parse(empresasString);
+    }
+    return empresasObjeto;
+}
 // Código que faz o botão de olho trocar o tipo de password para text
 let botaoVerSenha = document.querySelector('.olhoSenha');
 botaoVerSenha.addEventListener('click', () => {
@@ -21,22 +67,7 @@ botaoVerSenha.addEventListener('click', () => {
     }
 })
 function entrar() {
-    let emailLogin = document.querySelector('#emailLogin');
-    let senhaLogin = document.querySelector('#passwordLogin');
-    let msgError = document.querySelector('#msgError');
-    let msgSucess = document.querySelector('#msgSucess');
-    let userValid = {
-        id: '',
-        nome: '',
-        email: '',
-        senha: '',
-        birthdate: '',
-        gênero: '',
-        celular: '',
-        cpf: '',
-        escolaridade: '',
-        biografia: ''
-    }
+
     usuarios = leituraDadosUsuarios();
     usuarios.forEach((item) => {
         if (emailLogin.value == item.email && senhaLogin.value == item.senha) {
@@ -55,6 +86,28 @@ function entrar() {
             }
         }
     });
+    empresas = leituraDadosEmpresas();
+    empresas.forEach((each) =>{
+        if(emailLogin.value == each.email && senhaLogin.value == each.senha){
+            empresaValid =      
+            {
+                id: each.id,
+                razãoSocial:each.razãoSocial,
+                nomeFantasia:each.nomeFantasia,
+                cnpj:each.cnpj,
+                endereço:{
+                            cep:each.endereço.cep,
+                            estado:each.endereço.estado,
+                            cidade:each.endereço.cidade,
+                            bairro:each.endereço.bairro,
+                            logradouro:each.endereço.logradouro,
+                            numero:each.endereço.numero,
+                        },
+                email:each.email,
+                senha:each.senha,
+            }
+        }
+    })
     if(emailLogin.value == userValid.email && senhaLogin.value == userValid.senha){
         msgSucess.setAttribute('style', 'display:block');
         msgSucess.innerHTML = 'Bem vindo'
@@ -64,9 +117,22 @@ function entrar() {
         setTimeout(() => {
             window.location.href = 'feed.html';
         }, 1000);
-        let token = Math.random().toString(16).substring(2) + Math.random().toString(16).substring(2);
+        let token = "TokenUsuario";
         localStorage.setItem('token', token);
         localStorage.setItem('userLogado', JSON.stringify(userValid))
+    }
+    else if(emailLogin.value == empresaValid.email && senhaLogin.value == empresaValid.senha){
+        msgSucess.setAttribute('style', 'display:block');
+        msgSucess.innerHTML = 'Bem vindo'
+        msgError.setAttribute('style', 'display:none');
+        msgError.innerHTML = ''
+        botaoVerSenha.setAttribute('style', 'top: 65vh');
+        setTimeout(() => {
+            window.location.href = 'feed.html';
+        }, 1000);
+        token = "TokenEmpresa";
+        localStorage.setItem('token', token);
+        localStorage.setItem('userLogado', JSON.stringify(empresaValid))
     }
     else{
         msgError.setAttribute('style', 'display:block');
