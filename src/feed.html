@@ -14,14 +14,14 @@
         </span>
         <nav class="navheader">
             <a href="feed.html">Feed</a>
-            <a href="vagas.html">Vagas</a>
+            <a onclick="telaDeVagas()">Vagas</a>
             <a href="pessoas.html">Pessoas</a>
             <div class="userDrop">
                 <button class="Userdropbtn">
                 <img src="assets/img/icones de interface/do-utilizador (2).png"/>
                 </button>
                 <div class="userDropdown-content">
-                  <a href="paginaUsuario.html">Perfil</a>
+                  <button onclick="selecionarPerfil()" id="selectPerfil">Perfil</button>
                   <button onclick="logout()"id="btnLogout">Logout</button>
                 </div>
               </div>
@@ -35,11 +35,12 @@
         <div class="painelPosts">
             <div class="adicionarPost">
                 <span class="imgPost">
-                    <a href="paginaUsuario.html"><img src="assets/img/icones de interface/do-utilizador (2).png"/></a>
+                    <a id ="avatarInputPost"><img src="assets/img/icones de interface/do-utilizador (2).png"/></a>
                     <span id="nomeLogado"></span>
                 </span>
                 <span class="inputPost">
-                    <input id="conteudoPost" type="text">
+                    <input id="tituloPost" type="text" placeholder="Título do Post">
+                    <textarea id="conteudoPost" placeholder="Post"></textarea>
                 </span>
                 <span class="btnInterface">
                     <button id="postar">Post</button>
