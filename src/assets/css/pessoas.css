@@ -1,0 +1,94 @@
+body{
+    background-color: rgb(245, 245, 245);
+}
+main{
+    border: solid 1px green;
+    margin-top: 16vh;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    & .searchPessoas{
+        width: 80%;
+        & h2{
+            text-align: center;
+        }
+        & .pesquisarPessoas{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: solid 1px red;
+            gap: 10px;
+            & #inputPessoas{
+                width: 50%;
+                height: 2vw;
+                border: black solid 1px;
+                border-radius: 10px;
+                padding: 10px;
+                font-size: 20px;
+            }
+            & #filtrarPessoas{
+                width: 200px;
+                height: 2vw;
+                background-color: #771e76be;
+                border: black solid 1px;
+                border-radius: 30px;
+                cursor: pointer;
+            }
+            & #filtrarPessoas:hover{
+                transition: 0.2s;
+                background-color: #771e7685;
+            }
+        }
+    }
+    & .telaPessoas{
+        width: 80%; 
+        border: solid 1px green;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        & #msgError{
+            color: #ff0000;
+            background-color: #ffbbbb;
+            padding: 10px;
+            margin-top: 2vw;
+            border-radius: 20px;
+            width: 50%;
+            text-align: center;
+        }
+        & .resultadoPesquisa{
+            width: 100%;
+            margin-top: 2vh;
+            border: solid 1px orange;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            & #adicionarPessoa{
+                width: 20%;
+                height: 50px;
+                border: solid 1px black;
+                background-color: rgba(0, 128, 17, 0.849);
+                cursor: pointer;
+                border-radius: 30px;
+            }
+            & #info{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 20px;
+                padding: 10px;
+                & a{
+                    border: solid 1px black;
+                    border-radius: 200px;
+                    padding: 14px 16px;
+                    & img{
+
+                        width: 32px;
+                    }
+                }
+            }
+        }
+    }
+}

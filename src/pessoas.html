@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pessoas</title>
+    <link rel="stylesheet" href="assets/css/pessoas.css" />
+    <link rel="stylesheet" href="assets/css/global.css" />
+</head>
+
+<body>
+    <header>
+        <span>
+            <img src="assets/img/saida.png" />
+        </span>
+        <nav class="navheader">
+            <a href="feed.html">Feed</a>
+            <a onclick="telaDeVagas()">Vagas</a>
+            <a href="pessoas.html">Pessoas</a>
+            <div class="userDrop">
+                <button class="Userdropbtn">
+                    <img src="assets/img/icones de interface/do-utilizador (2).png" />
+                </button>
+                <div class="userDropdown-content">
+                    <button onclick="selecionarPerfil()" id="selectPerfil">Perfil</button>
+                    <button onclick="logout()" id="btnLogout">Logout</button>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="searchPessoas">
+            <h2>Encontre pessoas e empresas</h2>
+            <div class="pesquisarPessoas">
+                <input id="inputPessoas" type="text">
+                <button id="filtrarPessoas">Pesquisar</button>
+            </div>
+        </div>
+        <div class="telaPessoas">
+        </div>
+    </main>
+    <script src="assets/script/pessoas.js"></script>
+
+</html>

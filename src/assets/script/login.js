@@ -19,7 +19,7 @@ let empresaValid =
 {
     id:'',
     razãoSocial:'',
-    nomeFantasia:'',
+    nome:'',
     cnpj:'',
     endereço:{
                 cep:'',
@@ -93,7 +93,7 @@ function entrar() {
             {
                 id: each.id,
                 razãoSocial:each.razãoSocial,
-                nomeFantasia:each.nomeFantasia,
+                nome:each.nomeFantasia,
                 cnpj:each.cnpj,
                 endereço:{
                             cep:each.endereço.cep,

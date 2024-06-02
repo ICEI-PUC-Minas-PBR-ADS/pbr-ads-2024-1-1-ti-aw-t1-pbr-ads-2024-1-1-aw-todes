@@ -1,9 +1,11 @@
+body{
+    background-color: rgb(245, 245, 245);
+}
 main {
     background-color: rgb(245, 245, 245);
     border: solid 1px green;
     margin-top: 16vh;
     width: 100vw;
-    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -57,7 +59,7 @@ main {
                 align-items: center;
                 flex-direction: column;
 
-                & h3{
+                & h3 {
                     font-size: 15px;
                 }
 
@@ -83,7 +85,8 @@ main {
                 display: flex;
                 flex-direction: column;
                 align-items: center;
-                & #tituloPost{
+
+                & #tituloPost {
                     border: solid 1px black;
                     border-radius: 20px;
                     width: 80%;
@@ -92,7 +95,8 @@ main {
                     padding: 10px;
                     font-size: 16px;
                 }
-                & #conteudoPost{
+
+                & #conteudoPost {
                     border: solid 1px black;
                     border-radius: 20px;
                     width: 80%;
@@ -100,30 +104,34 @@ main {
                     padding: 10px;
                     font-size: 16px;
                 }
-                & #conteudoPost::-webkit-scrollbar{
+
+                & #conteudoPost::-webkit-scrollbar {
                     width: 0;
-                    
+
                 }
             }
-            & .btnInterface{
+
+            & .btnInterface {
                 border: solid 1px fuchsia;
                 width: 100%;
                 height: 25%;
                 display: flex;
                 justify-content: end;
                 align-items: center;
-                & #postar{
+
+                & #postar {
                     margin-right: 7vw;
                     width: 5vw;
                     height: 4vh;
                     border: solid 1px black;
                     border-radius: 50px;
                     cursor: pointer;
-                    background-color:#771e76;
+                    background-color: #771e76;
                     color: #ffffff;
                 }
-            }   
-            & #postar:hover{
+            }
+
+            & #postar:hover {
                 transition: 0.2s;
                 background-color: #771e76da;
 
@@ -131,29 +139,86 @@ main {
         }
 
         & .posts {
-            margin-top: 3vh;
             width: 80%;
-            height: 20vh;
+            height: 100%;
             display: flex;
+            flex-direction: column;
+            border: solid 1px black;
 
             & .post1 {
-                height: 75%;
-                width: 10%;
+                width: 100%;
+                border: solid 1px red;
+                margin-top: 3vh;
                 display: flex;
-                justify-content: center;
-                align-items: center;
 
-                & a {
-                    border: solid 1px black;
-                    border-radius: 100px;
-                    width: 60px;
-                    height: 60px;
+                & .autorPost {
+                    width: 10%;
+                    border: solid 1px purple;
                     display: flex;
-                    justify-content: center;
+                    flex-direction: column;
                     align-items: center;
+                    justify-content: center;
 
-                    & img {
-                        width: 40px;
+                    & h3 {
+                        font-size: 15px;
+                    }
+
+                    & a {
+                        border: solid 1px black;
+                        border-radius: 100px;
+                        width: 60px;
+                        height: 60px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+
+                        & img {
+                            width: 40px;
+                        }
+                    }
+                }
+
+                & .content {
+                    width: 90%;
+                    & .conteudoDoPost {
+                        width: 100%;
+                        border: solid 1px purple;
+                        justify-content: center;
+                        flex-direction: column;
+
+                        & h3 {
+                            border: yellow solid 1px;
+                            text-align: center;
+                            padding: 5px;
+                        }
+                        & #paragrafoPost {
+                                width: 100%;
+                                border: yellow solid 1px;
+                                padding: 5px;
+
+                        }
+                    }
+                    & .btnPosts {
+                        border: solid 1px fuchsia;
+                        height: 2vw;
+                        display: flex;
+                        justify-content: space-around;
+
+                        & .btnLike {
+                            border: none;
+
+                            & .fa-heart {
+                                font-size: 32px;
+                            }
+                        }
+
+                        & .btnDelete {
+                            border: none;
+
+                            & .fa-trash {
+                                font-size: 32px;
+                            }
+                        }
                     }
                 }
             }
