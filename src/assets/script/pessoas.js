@@ -27,6 +27,7 @@ var telaPessoas = document.querySelector(".telaPessoas");
 var inputPessoas = document.querySelector("#inputPessoas");
 var btnFiltrar = document.querySelector("#filtrarPessoas");
 let resultadoSearch = [];
+let modeloResultadoSearch
 btnFiltrar.addEventListener("click", () => {
     let empresasObjeto = leituraDadosEmpresas();
     let usuariosObjeto = leituraDadosUsuarios();
@@ -43,7 +44,12 @@ btnFiltrar.addEventListener("click", () => {
                         <button class="adicionarPessoa" data-id="${eachEmpresa.id}">Adicionar</button>
                     </div>`;
             telaPessoas.innerHTML += defaultHTML;
-            resultadoSearch.push(eachEmpresa.id);
+            modeloResultadoSearch = 
+            {
+                idSearch: eachEmpresa.id,
+                nomeSeach: eachEmpresa.nomeFantasia
+            }
+            resultadoSearch.push(modeloResultadoSearch);
         }
     });
 
@@ -58,7 +64,12 @@ btnFiltrar.addEventListener("click", () => {
                         <button class="adicionarPessoa" data-id="${eachUser.id}">Adicionar</button>
                     </div>`;
             telaPessoas.innerHTML += defaultHTML;
-            resultadoSearch.push(eachUser.id);
+            modeloResultadoSearch = 
+            {
+                idSearch: eachUser.id,
+                nomeSeach: eachUser.nome
+            }
+            resultadoSearch.push(modeloResultadoSearch);
         }
     });
     document.querySelectorAll(".adicionarPessoa").forEach(function (eachBtn) {
