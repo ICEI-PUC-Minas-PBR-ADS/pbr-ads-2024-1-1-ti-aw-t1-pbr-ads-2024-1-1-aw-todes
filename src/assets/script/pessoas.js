@@ -47,8 +47,8 @@ btnFiltrar.addEventListener("click", ()=>{
         }
     });
     //script para adicionar amigos
-    document.querySelectorAll(".adicionarPessoa").forEach(function(eachBtn){
-        eachBtn.addEventListener("click", function(){
+    document.querySelectorAll(".adicionarPessoa").forEach(function(eachBtn) {
+        eachBtn.addEventListener("click", function() {
             console.log("sigma")
             var empresaId = parseInt(eachBtn.dataset.id);
             var empresaSelecionada = empresasObjeto.findIndex(empresas => empresas.id === empresaId);
