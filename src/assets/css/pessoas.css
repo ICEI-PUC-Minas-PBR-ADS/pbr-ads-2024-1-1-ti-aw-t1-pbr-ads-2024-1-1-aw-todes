@@ -65,7 +65,7 @@ main{
             display: flex;
             justify-content: space-around;
             align-items: center;
-            & #adicionarPessoa{
+            & .adicionarPessoa{ 
                 width: 20%;
                 height: 50px;
                 border: solid 1px black;
