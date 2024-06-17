@@ -32,6 +32,10 @@ let logradouro = document.querySelector('#logradouro');
 let logradouroNumero = document.querySelector('#logradouroNumero');
 let validLogradouroNumero = document.querySelector('#logradouroNumero');
 
+let telefone = document.querySelector('#telefone');
+let validTelefone = false;
+let telefonePattern = /^\(\d{2}\) \d{4,5}-\d{4}$/;
+
 let emailEmpresa = document.querySelector('#emailEmpresa');
 let validEmailEmpresa = false;
 let emailPattern = /^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,4})$/;
@@ -101,11 +105,22 @@ cnpj.addEventListener('keyup', () => {
         validCnpj = true;
     }
 });
-
+function validaTelefone(telefone) {
+    return telefonePattern.test(telefone);
+}
 function validaEmail(email) {
     return emailPattern.test(email);
 }
-
+telefone.addEventListener('keyup', () => {
+    if (validaTelefone(telefone.value) !== true) {
+        telefone.style.border = 'solid 1px red'
+        validTelefone = false;
+    }
+    else {
+        telefone.style.border = 'solid 1px green'
+        validTelefone = true;
+    }
+})
 emailEmpresa.addEventListener('keyup', () => {
     if (validaEmail(emailEmpresa.value) !== true) {
         emailEmpresa.style.border = 'solid 1px red'
@@ -179,6 +194,7 @@ function cadastrar(){
                         logradouro:logradouro.value,
                         numero:logradouroNumero.value,
                     },
+            telefone:telefone.value,
             email:emailEmpresa.value,
             senha:passwordEmpresa.value,
         }
@@ -198,7 +214,7 @@ function cadastrar(){
     }
 };
 function condiçãoCadastro(){
-   if(validRazaoSocial && validNomeFantasia && validCnpj && validCEP && validLogradouroNumero && validEmailEmpresa && validConfirmEmailEmpresa && validPasswordEmpresa && 
+   if(validRazaoSocial && validNomeFantasia && validCnpj && validCEP && validLogradouroNumero && validTelefone && validEmailEmpresa && validConfirmEmailEmpresa && validPasswordEmpresa && 
       validConfirmPasswordEmpresa){
         return true
       }
@@ -214,44 +230,6 @@ function criadorID(){
         return tamanhoVetor + 1;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 //funcionalidade API cep
 //Validando o CEP numerico
 cepInput.addEventListener('keypress', (e) => {

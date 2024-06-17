@@ -103,6 +103,7 @@ function entrar() {
                             logradouro:each.endereço.logradouro,
                             numero:each.endereço.numero,
                         },
+                telefone:each.telefone,
                 email:each.email,
                 senha:each.senha,
             }

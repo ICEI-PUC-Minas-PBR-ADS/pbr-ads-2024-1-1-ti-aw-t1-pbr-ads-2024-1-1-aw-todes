@@ -118,3 +118,6 @@ function criadorID() {
         return tamanhoVetor + 1;
     }
 }
+let imagemLogo = document.getElementById("linkHome").addEventListener('click', ()=>{
+    window.location.href = 'home.html';
+});
