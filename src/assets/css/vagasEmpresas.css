@@ -1,0 +1,231 @@
+body{
+    background-color: rgb(245, 245, 245);
+}
+
+main {
+    margin-top: 18vh;
+    width: 100vw;
+    border: solid 1px green;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    & .selectPagina {
+        border: solid 1px blue;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        gap: 5vw;
+
+        & button {
+            width: 200px;
+            height: 50px;
+            font-size: 20px;
+            border-radius: 20px;
+            cursor: pointer;
+        }
+        & button:hover{
+            background-color: #771e76a2;
+            transition: 0.2s;
+        }
+    }
+
+    & .contentPagina {
+        margin-top: 3vw;
+        width: 90%;
+        border: solid 1px red;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        & .showVagas{
+            width: 80%;
+            display: flex;
+            flex-direction: column;
+            border: solid 1px blue;
+            & .vaga{
+                display: flex;
+                flex-wrap: wrap;
+                border: solid 1px black;
+                border-radius: 20px;
+                margin-top: 2vw;
+                & .titleVaga{
+                    padding: 5px;
+                    width: 100%;
+                    border: solid 1px red;
+                    text-align: center;
+                }
+                & .descriçãoVaga{
+                    padding: 5px;
+                    display: flex;
+                    flex-direction: column;
+                    width: 60%;
+                    border: solid 1px yellow;
+                    align-items: center;
+                }
+                & .requisitosVaga{
+                    padding: 5px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    width: 40%;
+                    border: solid 1px yellow;
+                }
+                & .salarioVaga{
+                    padding: 5px;
+                    display: flex;
+                    flex-direction: column;
+                    width: 60%;
+                    border: solid 1px yellow;
+                    align-items: center;
+                    & h4{
+                        font-weight: normal;
+                    }
+                }
+                & .telefoneVaga{
+                    padding: 5px;
+                    display: flex;
+                    flex-direction: column;
+                    width: 40%;
+                    border: solid 1px yellow;
+                    align-items: center;
+                    & h4{
+                        font-weight: normal;
+                    }
+                }
+            }
+        }
+        & .addVaga {
+            width: 100%;
+            & .infoVaga {
+                display: flex;
+                flex-direction: column;
+
+                & #title {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+
+                & .formVaga {
+                    border: solid 1px purple;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 1vw;
+
+                    & .primParte {
+                        display: flex;
+                        justify-content: space-around;
+                        border: solid 2px orange;
+                        & .inputs1 {
+                            display: flex;
+                            flex-direction: column;
+
+                            & label {
+                                border: solid 1px orange;
+                                width: 400px;
+                                text-align: center;
+                            }
+
+                            & input {
+                                width: 400px;
+                                padding: 5px;
+                                height: 30px;
+                            }
+                        }
+
+                        & .inputs2 {
+                            display: flex;
+                            flex-direction: column;
+
+                            & label {
+                                border: solid 1px orange;
+                                width: 400px;
+                                text-align: center;
+                            }
+
+                            & input {
+                                width: 400px;
+                                padding: 5px;
+                                height: 30px;
+                            }
+                        }
+
+                        & .inputs3 {
+                            display: flex;
+                            flex-direction: column;
+
+                            & label {
+                                border: solid 1px orange;
+                                width: 400px;
+                                text-align: center;
+                            }
+
+                            & input {
+                                width: 400px;
+                                padding: 5px;
+                                height: 30px;
+                            }
+                        }
+                    }
+
+                    & .inputs4 {
+                        display: flex;
+                        flex-direction: column;
+                        margin-left: 4.3vw;
+
+                        & label {
+                            border: solid 1px orange;
+                            width: 95%;
+                            text-align: center;
+                        }
+
+                        & textarea {
+                            font-size: 20px;
+                            width: 95%;
+                            padding: 5px;
+                            height: 100px;
+                        }
+                    }
+                    & .secondParte{
+                        display: flex;
+                        justify-content: space-around;
+                        border: solid 2px orange;
+                        & .inputs1 {
+                            display: flex;
+                            flex-direction: column;
+
+                            & label {
+                                border: solid 1px orange;
+                                width: 400px;
+                                text-align: center;
+                            }
+
+                            & textarea {
+                                width: 400px;
+                                padding: 5px;
+                                height: 100px;
+                                font-size: 16px;
+                                border: solid 1px black;
+                                outline: none;
+                            }
+                        }
+                    }
+                    & #enviarVaga{
+                        margin-left: 37vw;
+                        width: 300px;
+                        height: 50px;
+                        border-radius: 20px;
+                        font-size: 16px;
+                        cursor: pointer;
+                        background-color: #771e76e1;
+                    }
+                    & #enviarVaga:hover{
+                        background-color: #771e76a2;
+                        transition: 0.2s;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vagas</title>
+    <link rel="stylesheet" href="assets/css/vagasUsuarios.css" />
+    <link rel="stylesheet" href="assets/css/global.css" />
+</head>
+
+<body>
+    <header>
+        <span>
+            <img id="linkHome" src="assets/img/saida.png" />
+        </span>
+        <nav class="navheader">
+            <a href="feed.html">Feed</a>
+            <a onclick="telaDeVagas()">Vagas</a>
+            <a href="pessoas.html">Pessoas</a>
+            <div class="userDrop">
+                <button class="Userdropbtn">
+                    <img src="assets/img/icones de interface/do-utilizador (2).png" />
+                </button>
+                <div class="userDropdown-content">
+                    <button onclick="selecionarPerfil()" id="selectPerfil">Perfil</button>
+                    <button onclick="logout()" id="btnLogout">Logout</button>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="showVagas">
+        </div>
+
+    </main>
+    <script src="assets/script/vagasUsuarios.js"></script>
+
+</body>
+
+</html>

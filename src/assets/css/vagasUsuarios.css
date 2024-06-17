@@ -1,0 +1,71 @@
+body{
+    background-color: rgb(245, 245, 245); 
+}
+
+main{
+    background-color: rgb(245, 245, 245);
+    margin-top: 18vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    & .showVagas{
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        & .vaga{
+            display: flex;
+            flex-wrap: wrap;
+            border: solid 2px black;
+            border-radius: 20px;
+            margin-top: 2vw;
+            & .titleVaga{
+                padding: 5px;
+                width: 100%;
+                border-bottom: solid 2px black;
+                text-align: center;
+            }
+            & .descriçãoVaga{
+                padding: 5px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 60%;
+                border-bottom: solid 2px black;
+                border-right: solid 2px black;
+                & h3{
+                    text-align: center;
+                }
+            }
+            & .requisitosVaga{
+                padding: 5px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 40%;
+                border-bottom: solid 2px black;
+            }
+            & .salarioVaga{
+                padding: 5px;
+                display: flex;
+                flex-direction: column;
+                width: 60%;
+                border-right: solid 2px black;
+                align-items: center;
+                & h4{
+                    font-weight: normal;
+                }
+            }
+            & .telefoneEmpresa{
+                padding: 5px;
+                display: flex;
+                flex-direction: column;
+                width: 40%;
+                align-items:center;
+
+                & h4{
+                    font-weight: normal;
+                }
+            }
+        }
+    }
+}
