@@ -1,4 +1,4 @@
-window.onload = function carregaVagas(){
+window.onload = function carregaVagas() {
     let vagas = leituraVagas();
     if (vagas !== null) {
         imprimirVagas();
@@ -16,33 +16,34 @@ function leituraVagas() {
     }
     return vagasObjeto;
 }
-function imprimirVagas(){
+function imprimirVagas() {
     let telaDeVagas = document.querySelector(".showVagas");
     let vagas = leituraVagas();
-    vagas.forEach(eachVagas => {
+    for (let i = vagas.length - 1; i >= 0; i--) {
+        let vaga = vagas[i];
         let defaultHTML = `<div class="vaga">
                 <span class="titleVaga">
-                    <h2>${eachVagas.tituloVaga}</h2>
+                    <h2>${vaga.tituloVaga}</h2>
                 </span>
                 <span class="descriçãoVaga">
                     <h3>Descrição da Vaga</h3>
-                    <p>${eachVagas.descriçãoVaga}</p>
+                    <p>${vaga.descriçãoVaga}</p>
                 </span>
                 <span class="requisitosVaga">
                     <h3>Requisitos</h3>
-                    <p>${eachVagas.funçãoVaga}</p>
+                    <p>${vaga.funçãoVaga}</p>
                 </span>
                 <span class="salarioVaga">
                     <h3>Salário da Vaga</h3>
-                    <h4>${eachVagas.salarioVaga}</h4>
+                    <h4>${vaga.salarioVaga}</h4>
                 </span>
                 <span class="telefoneEmpresa">
                     <h3>Telefone para contato</h3>
-                    <h4>${eachVagas.telefoneVaga}</h4>
+                    <h4>${vaga.telefoneVaga}</h4>
                 </span>
             </div>`
-            telaDeVagas.innerHTML += defaultHTML;
-    })
+        telaDeVagas.innerHTML += defaultHTML;
+    }
 }
 
 
@@ -133,7 +134,7 @@ function imprimirVagas(){
 
 
 
-let imagemLogo = document.getElementById("linkHome").addEventListener('click', ()=>{
+let imagemLogo = document.getElementById("linkHome").addEventListener('click', () => {
     window.location.href = 'home.html';
 });
 let token = localStorage.getItem('token');

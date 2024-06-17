@@ -47,17 +47,18 @@ btnPostar.addEventListener('click', () => {
 function ImprimirPosts() {
     document.querySelector('.posts').innerHTML = "";
     let posts = leituraPosts();
-    posts.forEach(eachPost => {
+    for (let i = posts.length - 1; i >= 0; i--) {
+        let post = posts[i];
         let defaultHTML = `
         <div class="post1">    
             <div class="autorPost">
                 <a><img src="assets/img/icones de interface/do-utilizador (2).png"></a>
-                <h3>${eachPost.nomeAutor}</h3>
+                <h3>${post.nomeAutor}</h3>
             </div>
             <div class ="content">
             <div class="conteudoDoPost">
-                <h3>${eachPost.Titulo}</h3>
-                <div id="paragrafoPost">${eachPost.Conteudo}</div>
+                <h3>${post.Titulo}</h3>
+                <div id="paragrafoPost">${post.Conteudo}</div>
             </div>
             <div class="btnPosts">
             <button class="btnLike"><i class="fa-regular fa-heart"></i></button>
@@ -66,7 +67,7 @@ function ImprimirPosts() {
             </div>
         </div>`;
         document.querySelector('.posts').innerHTML += defaultHTML;
-    });
+    }
 }
 if (token == null) {
     alert('Você precisa estar logado para acessar o feed');
@@ -118,6 +119,6 @@ function criadorID() {
         return tamanhoVetor + 1;
     }
 }
-let imagemLogo = document.getElementById("linkHome").addEventListener('click', ()=>{
+let imagemLogo = document.getElementById("linkHome").addEventListener('click', () => {
     window.location.href = 'home.html';
 });

@@ -129,29 +129,30 @@ myVagas.addEventListener("click", () => {
         validAddVaga = false;
         addVaga.style.backgroundColor = "rgb(245, 245, 245)"
         myVagas.style.backgroundColor = "#771e76a2"
-        vagas.forEach(eachVaga => {
-            if (eachVaga.idEmpresa === userLogado.id) {
+        for (let i = vagas.length - 1; i >= 0; i--){
+            let vaga = vagas[i];
+            if (vaga.idEmpresa === userLogado.id) {
                 MinhasVagas = `       
                 <div class="showVagas">
                             <div class="vaga">
                                 <span class="titleVaga">
-                                    <h2>${eachVaga.tituloVaga}</h2>
+                                    <h2>${vaga.tituloVaga}</h2>
                                 </span>
                                 <span class="descriçãoVaga">
                                     <h3>Descrição da Vaga</h3>
-                                    <p>${eachVaga.descriçãoVaga}</p>
+                                    <p>${vaga.descriçãoVaga}</p>
                                 </span>
                                 <span class="requisitosVaga">
                                     <h3>Requisitos</h3>
-                                    <p>${eachVaga.requisitosVaga}</p>
+                                    <p>${vaga.requisitosVaga}</p>
                                 </span>
                                 <span class="salarioVaga">
                                     <h3>Salário da Vaga</h3>
-                                    <h4>${eachVaga.salarioVaga}</h4>
+                                    <h4>${vaga.salarioVaga}</h4>
                                 </span>
                                 <span class="telefoneVaga">
                                     <h3>Telefone para contato</h3>
-                                    <h4>${eachVaga.telefoneVaga}</h4>
+                                    <h4>${vaga.telefoneVaga}</h4>
                                 </span>
                             </div>
                 </div>`
@@ -167,7 +168,7 @@ myVagas.addEventListener("click", () => {
                             
                             telaVagas.innerHTML = MinhasVagas;
             }
-        });
+        }
     }
 })
 btnEnviarVaga.addEventListener("click", () => {
