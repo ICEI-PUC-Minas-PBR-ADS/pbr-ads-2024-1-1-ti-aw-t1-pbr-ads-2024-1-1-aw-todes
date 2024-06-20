@@ -208,7 +208,9 @@ function cadastrar() {
             celular: telefone.value,
             cpf: cpf.value,
             escolaridade: formacao.value,
-            biografia: ""
+            biografia: "",
+            formação2: '',
+            experiencia: '',
         }
         usuarios.push(cadastrarUser);
         localStorage.setItem('usuarios', JSON.stringify(usuarios));

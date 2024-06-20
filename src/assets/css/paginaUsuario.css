@@ -1,0 +1,374 @@
+body {
+    background-color: rgb(245, 245, 245);
+}
+
+main {
+    width: 100vw;
+    padding: 10px;
+
+    & .telaPerfil {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        & .headerPerfil {
+            border-radius: 15px;
+            width: 100%;
+            height: 25vh;
+            background-color: #771e76be;
+            display: flex;
+            align-items: center;
+            justify-content: start;
+
+            & .perfil {
+                border: solid 1px blue;
+                display: flex;
+                padding: 10px;
+                margin-top: 6vw;
+                align-items: center;
+                justify-content: center;
+                width: 37%;
+
+                & a {
+                    border: solid 1px black;
+                    border-radius: 100px;
+                    width: 100px;
+                    height: 100px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    & img {
+                        width: 60px;
+                    }
+                }
+
+                & h1 {
+                    margin-top: 1vw;
+                    margin-left: 1.5vw;
+                }
+
+            }
+
+            & .backStart {
+                display: flex;
+                width: 43%;
+                border: solid 1px red;
+                gap: 50px;
+                align-items: center;
+                justify-content: center;
+                margin-top: 20vh;
+
+                a {
+                    font-size: 25px;
+                    text-decoration: none;
+                    color: rgb(245, 245, 245);
+                }
+            }
+
+            & .logout {
+                display: flex;
+                width: 35%;
+                border: solid 1px red;
+                gap: 50px;
+                align-items: center;
+                justify-content: center;
+                margin-top: 20vh;
+
+                & #logout {
+                    width: 150px;
+                    height: 30px;
+                    border:rgb(245, 245, 245);
+                    color: rgb(245, 245, 245);
+                    border-radius: 20px;
+                    cursor: pointer;
+                    background-color:#771e76be;
+                }
+                & #logout:hover{
+                    background-color: #771e765b;
+                    transition: 0.2s;
+                }
+            }
+        }
+
+        & .textError {
+            margin-top: 1vh;
+            padding: 10px;
+            background-color: #ffbbbb;
+            color: #ff0000;
+            display: none;
+        }
+
+        & .textUpdate {
+            margin-top: 1vh;
+            padding: 10px;
+            background-color: #bbffbe;
+            color: #00bb00;
+            display: none;
+        }
+
+        & .infoPerfil {
+            border: solid 1px black;
+            border-radius: 20px;
+            width: 90%;
+            margin-top: 3vh;
+            display: flex;
+            flex-direction: column;
+
+            & .btnEdit {
+                border: red solid 1px;
+                display: flex;
+
+                & #editPerfil {
+                    width: 100%;
+                    border: none;
+                    cursor: pointer;
+                    display: flex;
+                    justify-content: end;
+                    padding: 10px;
+
+                    & .fa-pen {
+                        font-size: 28px;
+                    }
+
+                    & .fa-pen:hover {
+                        color: green;
+                        transition: 0.2s;
+                    }
+                }
+            }
+
+            & .infoPessoais {
+                border: solid 1px orange;
+                width: 100%;
+                display: flex;
+                flex-wrap: wrap;
+
+                & .title {
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    padding: 10px;
+                }
+
+                & .bio {
+                    width: 100%;
+                    border: solid 1px blue;
+                    padding: 10px;
+
+                    & h3 {
+                        opacity: 70%;
+                    }
+                }
+
+                & .outrasInfos {
+                    width: 100%;
+                    display: flex;
+
+                    & .part1 {
+                        width: 50%;
+                        border: solid 1px green;
+                        padding: 10px;
+
+                        & #nome {
+                            height: 13vh;
+                            padding: 10px;
+                            border: solid 1px red;
+                        }
+
+                        & #formação {
+                            padding: 10px;
+                            border: solid 1px red;
+                        }
+                    }
+
+                    & .part2 {
+                        padding: 10px;
+                        width: 50%;
+                        border: solid 1px green;
+
+                        & #telefonePerfil {
+                            height: 13vh;
+                            padding: 10px;
+                            border: solid 1px red;
+                        }
+
+                        & #experienciaProfissional {
+                            padding: 10px;
+                            border: solid 1px red;
+                        }
+                    }
+
+                }
+            }
+        }
+
+        & .UpdatePerfil {
+            border: solid 1px black;
+            border-radius: 20px;
+            width: 90%;
+            margin-top: 3vh;
+            display: none;
+            flex-direction: column;
+
+            & .btnEdit {
+                border: red solid 1px;
+                display: flex;
+
+                & #editPerfil {
+                    width: 100%;
+                    border: none;
+                    cursor: pointer;
+                    display: flex;
+                    justify-content: end;
+                    padding: 10px;
+
+                    & .fa-pen {
+                        font-size: 28px;
+                    }
+
+                    & .fa-pen:hover {
+                        color: green;
+                        transition: 0.2s;
+                    }
+                }
+            }
+
+            & .UpdateinfoPessoais {
+                border: solid 1px orange;
+                width: 100%;
+                display: flex;
+                flex-wrap: wrap;
+
+                & .title {
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    padding: 10px;
+                }
+
+                & .bio {
+                    width: 100%;
+                    border: solid 1px blue;
+                    padding: 10px;
+
+                    & #addBio {
+                        width: 100%;
+                        padding: 10px;
+                        font-size: 18px;
+                    }
+                }
+            }
+
+            & .UpdateoutrasInfos {
+                width: 100%;
+                display: flex;
+
+                & .Updatepart1 {
+                    width: 50%;
+                    border: solid 1px green;
+                    padding: 10px;
+
+                    & #nome {
+                        height: 13vh;
+                        padding: 10px;
+                        border: solid 1px red;
+
+                        & input {
+                            width: 80%;
+                            height: 30px;
+                            padding: 5px
+                        }
+
+                        & #updateNome {
+                            margin-top: 5px;
+                        }
+
+                        & #updateEmail {
+                            margin-top: 5px;
+                        }
+                    }
+
+                    & #formação {
+                        padding: 10px;
+                        border: solid 1px red;
+
+                        & #formação2 {
+                            width: 100%;
+                            padding: 10px;
+                            font-size: 18px;
+                        }
+                    }
+                }
+
+                & .Updatepart2 {
+                    padding: 10px;
+                    width: 50%;
+                    border: solid 1px green;
+
+                    & #telefonePerfil {
+                        height: 13vh;
+                        padding: 10px;
+                        border: solid 1px red;
+
+                        & input {
+                            width: 80%;
+                            height: 30px;
+                            padding: 5px
+                        }
+
+                        & #updateTelefone {
+                            margin-top: 5px;
+                        }
+                    }
+
+                    & #experienciaProfissional {
+                        padding: 10px;
+                        border: solid 1px red;
+
+                        & #addExperiencia {
+                            margin-top: 3vh;
+                            width: 100%;
+                            padding: 10px;
+                            font-size: 18px;
+                        }
+                    }
+                }
+            }
+
+            & .validateUpdate {
+                display: flex;
+                justify-content: end;
+                padding: 10px;
+                width: 100%;
+
+                & #cancelUpdate {
+                    background-color: rgba(255, 0, 0, 0.74);
+                    width: 10vw;
+                    height: 5vh;
+                    cursor: pointer;
+                }
+
+                & #cancelUpdate:hover {
+                    background-color: rgba(255, 0, 0, 0.815);
+                    transition: 0.2;
+                }
+
+                & #acceptUpdate {
+                    background-color: rgba(0, 128, 0, 0.719);
+                    width: 10vw;
+                    height: 5vh;
+                    margin-left: 10px;
+                    cursor: pointer;
+                }
+
+                & #acceptUpdate:hover {
+                    background-color: rgba(0, 128, 0, 0.904);
+                    transition: 0.2s;
+                }
+            }
+        }
+    }
+}

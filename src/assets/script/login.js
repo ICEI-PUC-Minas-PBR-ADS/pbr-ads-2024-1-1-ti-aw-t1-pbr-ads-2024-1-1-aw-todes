@@ -13,7 +13,9 @@ let userValid = {
     celular: '',
     cpf: '',
     escolaridade: '',
-    biografia: ''
+    biografia: '',
+    formação2: '',
+    experiencia: ''
 }
 let empresaValid =        
 {
@@ -82,7 +84,9 @@ function entrar() {
                 celular: item.celular,
                 cpf: item.cpf,
                 escolaridade: item.escolaridade,
-                biografia: item.biografia
+                biografia: item.biografia,
+                formação2: item.formação2,
+                experiencia: item.experiencia
             }
         }
     });
