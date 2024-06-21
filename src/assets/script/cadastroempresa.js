@@ -197,6 +197,7 @@ function cadastrar(){
             telefone:telefone.value,
             email:emailEmpresa.value,
             senha:passwordEmpresa.value,
+            sobreNós: "",
         }
         empresas.push(cadastrarEmpresa);
         localStorage.setItem('empresas', JSON.stringify(empresas));

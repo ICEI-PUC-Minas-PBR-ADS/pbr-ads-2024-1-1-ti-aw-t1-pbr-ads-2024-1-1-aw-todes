@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil</title>
+    <link rel="stylesheet" href="assets/css/paginaEmpresa.css" />
+    <link rel="stylesheet" href="assets/css/global.css" />
+</head>
+
+<body>
+    <main>
+        <div class="telaPerfil">
+            <div class="headerPerfil">
+                <div class="perfil">
+                </div>
+                <div class="backStart">
+                    <a href="feed.html">Feed</a>
+                    <a href="pessoas.html">Pessoas</a>
+                    <a href="vagasUsuarios.html">Vagas</a>
+                </div>
+                <div class="logout">
+                    <button onclick="logout()" id="logout">Logout</button>
+                </div>
+            </div>
+            <div class="textError">
+                <h2>Campos obrigatorios não podem estar vazios!!!</h2>
+            </div>
+            <div class="textUpdate">
+                <h2>Atualizando dados</h2>
+            </div>
+            <div class="infoPerfil">
+                <span class="btnEdit">
+                    <button id="editPerfil"><i class="fa-solid fa-pen"></i></button>
+                </span>
+                <div class="infoPessoais">
+                    <span class="title">
+                        <h2>Informações Pessoais</h2>
+                    </span>
+                    <span class="bio">
+                        <h2>Sobre</h2>
+                        <h3></h3>
+                    </span>
+                    <section class="outrasInfos">
+                        <div class="part1">
+                            <div id="nome">
+                            </div>
+                        </div>
+                        <div class="part2">
+                            <div id="telefonePerfil"></div>
+                        </div>
+                        <div class="part3">
+                            <div id="endereçoEmpresa">
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+            <div class="UpdatePerfil">
+                <span class="btnEdit">
+                    <button id="editPerfil"><i class="fa-solid fa-pen"></i></button>
+                </span>
+                <div class="UpdateinfoPessoais">
+                    <span class="title">
+                        <h2>Informações Pessoais</h2>
+                    </span>
+                    <span class="bio">
+                        <h2>Sobre</h2>
+                        <textarea id="addBio" placeholder="Conte um pouco sobre sua Empresa"></textarea>
+                    </span>
+                    <section class="UpdateoutrasInfos">
+                        <div class="Updatepart1">
+                            <div id="nome">
+                                <h2>Nome</h2>
+                                <input type="text" id="updateNome" placeholder="Atualize seu nome"></input>
+                                <input type="email" id="updateEmail" placeholder="Atualize seu email"></input>
+                            </div>
+                        </div>
+                        <div class="Updatepart2">
+                            <div id="telefonePerfil">
+                                <h2>Telefone para contato</h2>
+                                <input type="text" id="updateTelefone"
+                                    placeholder="Atualize seu número (xx)xxxx-xxxx"></input>
+                            </div>
+                        </div>
+                    </section>
+                    <div class="validateUpdate">
+                        <button id="cancelUpdate">Cancelar</button>
+                        <button id="acceptUpdate">Atualizar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="assets/script/paginaEmpresa.js"></script>
+    <script src="https://kit.fontawesome.com/7aabcce838.js"></script>
+</body>
+
+</html>

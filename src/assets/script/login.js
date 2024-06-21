@@ -110,6 +110,7 @@ function entrar() {
                 telefone:each.telefone,
                 email:each.email,
                 senha:each.senha,
+                sobreNós: each.sobreNós,
             }
         }
     })

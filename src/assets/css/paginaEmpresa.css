@@ -165,15 +165,16 @@ main {
                 & .outrasInfos {
                     width: 100%;
                     display: flex;
+                    flex-wrap: wrap;
 
                     & .part1 {
                         width: 50%;
                         padding: 10px;
+                        border-bottom: black 2px solid;
 
                         & #nome {
                             height: 13vh;
                             padding: 10px;
-                            border-bottom: black 2px solid;
                         }
 
                         & #formação {
@@ -184,18 +185,31 @@ main {
                     & .part2 {
                         padding: 10px;
                         width: 50%;
+                        border-bottom: black 2px solid;
 
                         & #telefonePerfil {
                             height: 13vh;
                             padding: 10px;
-                            border-bottom: black 2px solid;
-                        }
-
-                        & #experienciaProfissional {
-                            padding: 10px;
                         }
                     }
-
+                    & .part3{
+                        width: 100%;
+                        padding: 10px;
+                        display: flex;
+                        justify-content: center;
+                        & #endereçoEmpresa {
+                            width: 100%;
+                            padding: 10px;
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            & h3{
+                                width: 50%;
+                                display: flex;
+                                justify-content: space-around;
+                            }
+                        }
+                    }
                 }
             }
         }
@@ -209,10 +223,12 @@ main {
             flex-direction: column;
 
             & .btnEdit {
+                width: 100%;
                 display: flex;
+                justify-content: end;
+                padding: 10px;
 
                 & #editPerfil {
-                    width: 100%;
                     border: none;
                     cursor: pointer;
                     display: flex;

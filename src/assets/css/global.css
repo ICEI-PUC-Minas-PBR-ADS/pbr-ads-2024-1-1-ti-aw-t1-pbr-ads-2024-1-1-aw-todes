@@ -9,7 +9,6 @@
 
 header {
     width: 100vw;
-    border: red 1px solid;
     display: flex;
     justify-content: space-between;
     position: absolute;
@@ -28,7 +27,6 @@ header {
     }
 
     & .navheader {
-        border: solid blue 1px;
         width: 40%;
         display: flex;
         justify-content: space-around;

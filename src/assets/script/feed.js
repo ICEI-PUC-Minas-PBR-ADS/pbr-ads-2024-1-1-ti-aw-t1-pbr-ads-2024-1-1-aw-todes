@@ -60,10 +60,6 @@ function ImprimirPosts() {
                 <h3>${post.Titulo}</h3>
                 <div id="paragrafoPost">${post.Conteudo}</div>
             </div>
-            <div class="btnPosts">
-            <button class="btnLike"><i class="fa-regular fa-heart"></i></button>
-            <button class="btnDelete"><i class="fa-solid fa-trash"></i></button> 
-            </div>
             </div>
         </div>`;
         document.querySelector('.posts').innerHTML += defaultHTML;

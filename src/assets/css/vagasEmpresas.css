@@ -5,13 +5,11 @@ body{
 main {
     margin-top: 18vh;
     width: 100vw;
-    border: solid 1px green;
     display: flex;
     flex-direction: column;
     align-items: center;
 
     & .selectPagina {
-        border: solid 1px blue;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -34,7 +32,6 @@ main {
     & .contentPagina {
         margin-top: 3vw;
         width: 90%;
-        border: solid 1px red;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -42,26 +39,26 @@ main {
             width: 80%;
             display: flex;
             flex-direction: column;
-            border: solid 1px blue;
             & .vaga{
                 display: flex;
                 flex-wrap: wrap;
-                border: solid 1px black;
+                border: solid 2px black;
                 border-radius: 20px;
                 margin-top: 2vw;
                 & .titleVaga{
                     padding: 5px;
                     width: 100%;
-                    border: solid 1px red;
                     text-align: center;
+                    border-bottom: solid 2px black;
                 }
                 & .descriçãoVaga{
                     padding: 5px;
                     display: flex;
                     flex-direction: column;
                     width: 60%;
-                    border: solid 1px yellow;
                     align-items: center;
+                    border-bottom: solid 2px black;
+                    border-right: solid 2px black;
                 }
                 & .requisitosVaga{
                     padding: 5px;
@@ -69,15 +66,15 @@ main {
                     flex-direction: column;
                     align-items: center;
                     width: 40%;
-                    border: solid 1px yellow;
+                    border-bottom: solid 2px black;
                 }
                 & .salarioVaga{
                     padding: 5px;
                     display: flex;
                     flex-direction: column;
                     width: 60%;
-                    border: solid 1px yellow;
                     align-items: center;
+                    border-right: solid 2px black;
                     & h4{
                         font-weight: normal;
                     }
@@ -87,7 +84,6 @@ main {
                     display: flex;
                     flex-direction: column;
                     width: 40%;
-                    border: solid 1px yellow;
                     align-items: center;
                     & h4{
                         font-weight: normal;
@@ -108,21 +104,23 @@ main {
                 }
 
                 & .formVaga {
-                    border: solid 1px purple;
+                    border: solid 2px black;
+                    border-radius: 20px;
                     display: flex;
                     flex-direction: column;
                     gap: 1vw;
+                    padding: 10px;
 
                     & .primParte {
                         display: flex;
                         justify-content: space-around;
-                        border: solid 2px orange;
+                        
                         & .inputs1 {
                             display: flex;
                             flex-direction: column;
 
                             & label {
-                                border: solid 1px orange;
+                                
                                 width: 400px;
                                 text-align: center;
                             }
@@ -139,7 +137,7 @@ main {
                             flex-direction: column;
 
                             & label {
-                                border: solid 1px orange;
+                                
                                 width: 400px;
                                 text-align: center;
                             }
@@ -156,7 +154,7 @@ main {
                             flex-direction: column;
 
                             & label {
-                                border: solid 1px orange;
+                                
                                 width: 400px;
                                 text-align: center;
                             }
@@ -175,7 +173,7 @@ main {
                         margin-left: 4.3vw;
 
                         & label {
-                            border: solid 1px orange;
+                            
                             width: 95%;
                             text-align: center;
                         }
@@ -185,18 +183,19 @@ main {
                             width: 95%;
                             padding: 5px;
                             height: 100px;
+                            resize: none;
                         }
                     }
                     & .secondParte{
                         display: flex;
                         justify-content: space-around;
-                        border: solid 2px orange;
+                        
                         & .inputs1 {
                             display: flex;
                             flex-direction: column;
 
                             & label {
-                                border: solid 1px orange;
+                                
                                 width: 400px;
                                 text-align: center;
                             }
@@ -208,6 +207,7 @@ main {
                                 font-size: 16px;
                                 border: solid 1px black;
                                 outline: none;
+                                resize: none;
                             }
                         }
                     }
