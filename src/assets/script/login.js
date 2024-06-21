@@ -97,7 +97,7 @@ function entrar() {
             {
                 id: each.id,
                 razãoSocial:each.razãoSocial,
-                nome:each.nomeFantasia,
+                nome:each.nome,
                 cnpj:each.cnpj,
                 endereço:{
                             cep:each.endereço.cep,

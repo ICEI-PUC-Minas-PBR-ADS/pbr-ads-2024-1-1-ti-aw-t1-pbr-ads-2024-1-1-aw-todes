@@ -184,7 +184,7 @@ function cadastrar(){
         {
             id: criadorID(empresas),
             razãoSocial:razaoSocial.value,
-            nomeFantasia:nomeFantasia.value,
+            nome:nomeFantasia.value,
             cnpj:cnpj.value,
             endereço:{
                         cep:cepInput.value,

@@ -54,12 +54,12 @@ btnFiltrar.addEventListener("click", () => {
     telaPessoas.innerHTML = '';
 
     empresasObjeto.forEach(eachEmpresa => {
-        if (eachEmpresa.nomeFantasia === inputPessoas.value) {
+        if (eachEmpresa.nome === inputPessoas.value) {
             let defaultHTML = `
                     <div class="resultadoPesquisa">
                         <span id="info">
                             <a href="#"><img src="assets/img/icones de interface/do-utilizador (2).png" /></a>
-                            <h2>${eachEmpresa.nomeFantasia}</h2>
+                            <h2>${eachEmpresa.nome}</h2>
                         </span>
                     </div>`;
             telaPessoas.innerHTML += defaultHTML;
