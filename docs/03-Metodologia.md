@@ -39,39 +39,36 @@ Discuta como a configuração do projeto foi feita na ferramenta de versionament
 
 ### Divisão de Papéis
 
-Apresente a divisão de papéis entre os membros do grupo.
-
-> **Links Úteis**:
-> - [11 Passos Essenciais para Implantar Scrum no seu 
-> Projeto](https://mindmaster.com.br/scrum-11-passos/)
-> - [Scrum em 9 minutos](https://www.youtube.com/watch?v=XfvQWnRgxG0)
+Cristian - Telas de Login,Cadastro de usuários,cadastro de Empresa,Perfil de usuários,Perfil de Empresa\
+Henrique - Tela de Vagas de usuário, Tela de Vagas de empresa, Tela de Pessoas\
+Tiago - Tela de feed\
+Wilker - Tela de homepage
 
 ### Processo
 
-Coloque  informações sobre detalhes da implementação do Scrum seguido pelo grupo. O grupo poderá fazer uso de ferramentas on-line para acompanhar o andamento do projeto, a execução das tarefas e o status de desenvolvimento da solução.
- 
-> **Links Úteis**:
-> - [Project management, made simple](https://github.com/features/project-management/)
-> - [Sobre quadros de projeto](https://docs.github.com/pt/github/managing-your-work-on-github/about-project-boards)
-> - [Como criar Backlogs no Github](https://www.youtube.com/watch?v=RXEy6CFu9Hk)
-> - [Tutorial Slack](https://slack.com/intl/en-br/)
+O projeto será implementado com o auxílio do Kanban automático do GitHub\
+e será composto por 4 Sprints numeradas de 1 a 4, são elas:\
+● Sprint 1: 1ª Etapa – Projeto dos requisitos e de artefatos do sistema;\
+● Sprint 2: 2ª Etapa – Desenvolvimento da solução;\
+● Sprint 3: 3ª Etapa – Implantação e testes funcionais;\
+● Sprint 4: 4ª Etapa – Testes de usabilidade e apresentação da solução.\
+Para cada etapa, o Product Owner definirá os backlogs e suas datas de\
+entrega, as tarefas serão designadas para cada Dev pela própria equipe de\
+desenvolvimento de forma que se auto-organizem, e a equipe contará com o auxílio,\
+supervisão e apoio do scrum master.
+
 
 ### Ferramentas
 
-As ferramentas empregadas no projeto são:
+As ferramentas empregadas no projeto são:\
+● VSCode - Editor de código;\
+● WhatsApp - Ferramentas de comunicação;\
+● Canva - Ferramenta de diagramação;\
+● GitHub - Hospedagem de códigos de programação;\
+● Figma - Plataforma online de criação de interfaces, wireframes e protótipos.\
+O Visual Studio Code (VSCode) foi selecionado devido à sua natureza gratuita, de código aberto, capacidade multi-idioma e multiplataforma.\
+O Canva foi escolhido como ferramenta de diagramação por sua facilidade de operação, por ser gratuito, contar com diversos modelos e ser o que melhor atende às necessidades do projeto.\
+O Whatsapp foi escolhido como uma das ferramentas de comunicação por ser o mais utilizado por todos da equipe e por possuir a criptografia de ponta a ponta.
+O GitHub foi escolhido por possibilitar o desenvolvimento colaborativo, registrar alterações e hospedar o projeto na nuvem utilizando um sistema de controle de versões.\
+O Figma foi escolhido por nos possibilitar de colaborar em tempo real com outros usuários da plataforma e a ferramenta de deixar o projeto completamente interativo, trazendo uma visualização mais efetiva.
 
-- Editor de código.
-- Ferramentas de comunicação
-- Ferramentas de desenho de tela (_wireframing_)
-
-O editor de código foi escolhido porque ele possui uma integração com o
-sistema de versão. As ferramentas de comunicação utilizadas possuem
-integração semelhante e por isso foram selecionadas. Por fim, para criar
-diagramas utilizamos essa ferramenta por melhor captar as
-necessidades da nossa solução.
-
-Liste quais ferramentas foram empregadas no desenvolvimento do projeto, justificando a escolha delas, sempre que possível.
- 
-> **Possíveis Ferramentas que auxiliarão no gerenciamento**: 
-> - [Slack](https://slack.com/)
-> - [Github](https://github.com/)
