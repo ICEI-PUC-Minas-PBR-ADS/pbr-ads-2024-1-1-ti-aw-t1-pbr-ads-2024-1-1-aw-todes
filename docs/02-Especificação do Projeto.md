@@ -61,23 +61,11 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 
 |ID     | Descrição do Requisito  |Prioridade |
 |-------|-------------------------|----|
-|RNF-001| O sistema deve ser responsivo para rodar em um dispositivos móvel | MÉDIA | 
-|RNF-002| Deve processar requisições do usuário em no máximo 3s |  BAIXA | 
-
-Com base nas Histórias de Usuário, enumere os requisitos da sua solução. Classifique esses requisitos em dois grupos:
-
-- [Requisitos Funcionais
- (RF)](https://pt.wikipedia.org/wiki/Requisito_funcional):
- correspondem a uma funcionalidade que deve estar presente na
-  plataforma (ex: cadastro de usuário).
-- [Requisitos Não Funcionais
-  (RNF)](https://pt.wikipedia.org/wiki/Requisito_n%C3%A3o_funcional):
-  correspondem a uma característica técnica, seja de usabilidade,
-  desempenho, confiabilidade, segurança ou outro (ex: suporte a
-  dispositivos iOS e Android).
-Lembre-se que cada requisito deve corresponder à uma e somente uma
-característica alvo da sua solução. Além disso, certifique-se de que
-todos os aspectos capturados nas Histórias de Usuário foram cobertos.
+|RNF-001| O projeto deve ser desenvolvido utilizando HTML, CSS e JavaScript. Sendo amplamente suportadas pelos navegadores e oferecem a flexibilidade necessária para criar uma experiência de usuário dinâmica e interativa.| ALTA | 
+|RNF-002| O site deve ser responsivo. Deve se adaptar automaticamente a diferentes tamanhos de tela edispositivos, garantindo uma experiência consistente e amigável para os usuáries, independentemente do dispositivo que está utilizando |  BAIXA | 
+|RNF-003|Implementar medidas robustas de segurança, como criptografia de dados, para proteger as informações dos usuáries contra acesso não autorizado ou violações de dados. Utiliza práticas recomendadas de autenticação e autorização para garantir que apenas usuáries e empresas autenticados tenham acesso às informações e funcionalidades apropriadas.|BAIXA|
+|RNF-004|Desenvolver a plataforma de forma modular e com código bem documentado para facilitar atualizações e manutenções futuras, garantindo que novos recursos e correções possam ser implementados de forma eficiente e sem interromper o serviço para os usuáries. |MÉDIA|
+|RNF-005| Projetar uma interface de usuário intuitiva e amigável que seja fácil de usar e navegar, mesmo para usuáries e empresas novos. Proporcionando uma experiência= consistente em diferentes ambientes de uso.|MÉDIA|
 
 ## Restrições
 
@@ -85,12 +73,6 @@ O projeto está restrito pelos itens apresentados na tabela a seguir.
 
 |ID| Restrição                                             |
 |--|-------------------------------------------------------|
-|01| O projeto deverá ser entregue até o final do semestre |
-|02| Não pode ser desenvolvido um módulo de backend        |
-
-
-Enumere as restrições à sua solução. Lembre-se de que as restrições geralmente limitam a solução candidata.
-
-> **Links Úteis**:
-> - [O que são Requisitos Funcionais e Requisitos Não Funcionais?](https://codificar.com.br/requisitos-funcionais-nao-funcionais/)
-> - [O que são requisitos funcionais e requisitos não funcionais?](https://analisederequisitos.com.br/requisitos-funcionais-e-requisitos-nao-funcionais-o-que-sao/)
+|01|  Para garantir a integridade dos dados e a validade das empresas cadastradas, o sistema permite apenas o cadastro de empresas utilizando CNPJ. Isso ajuda a evitar entradas inválidas ou duplicadas no sistema.|
+|02| O usuário poderá se cadastrar apenas por um e-mail e senha.|
+|03|As funcionalidades do site só serão acessíveis após o cadastro do usuário ou da empresa no sistema. Isso pode incluir a capacidade de fazer posts, favoritar conteúdo, acessar recursos exclusivos, entre outros. Essa restrição ajuda a garantir que apenas usuáries autenticados tenham acesso às funcionalidades completas do site.|
