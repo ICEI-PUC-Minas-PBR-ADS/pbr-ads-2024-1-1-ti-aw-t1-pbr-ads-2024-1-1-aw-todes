@@ -6,7 +6,9 @@
     font-family: "Poppins", sans-serif;
     box-sizing: border-box;
 }
-
+body {
+    background-color: rgb(245, 245, 245);
+}
 main {
     width: 100vw;
     display: flex;

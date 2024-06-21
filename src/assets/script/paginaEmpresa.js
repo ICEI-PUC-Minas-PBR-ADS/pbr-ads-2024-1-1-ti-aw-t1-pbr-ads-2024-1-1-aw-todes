@@ -77,7 +77,7 @@ btnConfirmUpdate.addEventListener("click", () => {
         if (userLogado.id == empresas[i].id) {
             function GetUpdateNome() {
                 if (updateNome.value == "") {
-                    return empresas[i].nome
+                    return empresas[i].razãoSocial
                 }
                 return updateNome.value;
             }
@@ -102,8 +102,8 @@ btnConfirmUpdate.addEventListener("click", () => {
             let atualizarEmpresa =
             {
                 id: empresas[i].id,
-                nome: GetUpdateNome(),
-                razãoSocial: empresas[i].razãoSocial,
+                nome:empresas[i].nome,
+                razãoSocial:GetUpdateNome(),
                 email: GetUpdateEmail(),
                 senha: empresas[i].senha,
                 endereço:{
@@ -122,8 +122,8 @@ btnConfirmUpdate.addEventListener("click", () => {
             let atualizaUserLogado =
             {
                 id: userLogado.id,
-                nome: empresas[i].nome,
-                razãoSocial: userLogado.razãoSocial,
+                nome:userLogado.nome,
+                razãoSocial:empresas[i].razãoSocial,
                 email: empresas[i].email,
                 senha: userLogado.senha,
                 endereço:{
